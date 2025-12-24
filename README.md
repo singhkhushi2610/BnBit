@@ -59,8 +59,6 @@ Configuration lives under `src/main/resources`:
 - `application-prod.properties`
   - Production template (placeholders for DB, JWT, frontend URL, Stripe live keys).
 
-> **Note**: `application-dev.properties` and `application-prod.properties` are **ignored by git** (`.gitignore`) so you can safely put secrets there locally.  
-> Do **not** commit real secrets.
 
 ### Running the Project
 
@@ -125,9 +123,4 @@ SPRING_PROFILES_ACTIVE=prod mvnw spring-boot:run
    - Stripe calls the webhook on success; backend marks booking as `CONFIRMED` and confirms inventory.
 5. **Manage bookings**
    - User can view their bookings; hotel owners can see all bookings and reports for their hotels.
-
-### Development Notes
-- Use your IDE’s “Rebuild project” or `mvnw clean test` to verify changes.
-- Sensitive config should stay in `application-*.properties` and **not** in `application.properties` or `pom.xml`.
-
 
