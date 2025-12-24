@@ -1,6 +1,6 @@
-## BnBit – Hotel Booking Backend (Spring Boot)
+## BnBit – Hotel Booking Application
 
-BnBit is a Spring Boot backend that powers an Airbnb‑style hotel booking system.  
+BnBit is an application connecting travelers with hosts offering unique stays (homes, apartments, castles) and experiences (cooking, hiking) in private properties, acting as a broker for short-term rentals.
 It handles authentication, hotel & room management, availability and dynamic pricing, bookings, and Stripe‑based payments.
 
 ### Tech Stack
